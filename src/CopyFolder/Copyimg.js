@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-
+import React, { useEffect, useState } from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 import Member from "../Images/live-visual.jpg"
 import LiveVisual from "../Images/live-visual.jpg";
@@ -9,7 +8,9 @@ import HeaderBuilder from "../Images/header-builder-5.jpg";
 import MegaMenu from "../Images/mega-menu-feature.jpg";
 import FooterBuilder from "../Images/footer-builder-5.jpg";
 import { FaAdn } from "react-icons/fa";
+
 const AllPages = () => {
+
 
     const [listOfImages, setListOfImages] = useState([
         { id: 1, url: LiveVisual, text: "Live Visual Builder", Icon: <FaAdn /> },
@@ -28,6 +29,12 @@ const AllPages = () => {
 
     console.log(getImage(), "uuuuu")
 
+
+
+
+
+
+
     return (
         <div style={{ fontFamily: "Basier semi bold", height: '100vh', width: '100%', margin: '0' }}>
 
@@ -39,9 +46,8 @@ const AllPages = () => {
             </header>
             <div>
                 <Container>
-                    <Row style={{ fontFamily: "Basier semi bold", display: 'flex', justifyContent: 'space-evenly', padding: '40px', margin: '20px' }}>
-                        <Col xs={2}></Col>
-                        <Col xs={2}>
+                    <Row style={{ fontFamily: "Basier semi bold", display: 'flex', justifyContent: 'space-evenly', padding: '40px', margin: '20px', border: "1px solid red" }}>
+                        <Col xs={4}>
                             <div style={{ borderRadius: '10px' }}>
                                 <ul style={{ listStyleType: "none" }}>
                                     {
@@ -56,10 +62,12 @@ const AllPages = () => {
                         </Col>
                         <Col xs={2}>
                         </Col>
-                        <Col xs={4}>
-                            <img src={getImage()?.[0]?.url} height="800px" />
+                        <Col xs={2}>
+                            <img src={getImage()?.[0]?.url} height="500px" />
                         </Col>
                         <Col xs={2}></Col>
+                        <Col xs={2}></Col>
+                       
                     </Row>
                 </Container>
 

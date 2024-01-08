@@ -10,9 +10,10 @@ import Col from 'react-bootstrap/Col';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { TiArrowRight } from "react-icons/ti";
 import { GrStar } from "react-icons/gr";
+import { IoChevronDownSharp } from "react-icons/io5";
 import AboutPage from "./AboutPage";
 import CardsDesing from "./CardsDesing";
-import { IoChevronDownSharp } from "react-icons/io5";
+import AllPages from "./AllPages";
 import '../Enavo/Envanto.css'
 
 
@@ -67,6 +68,9 @@ const Envanto = () => {
                 </div>
                 <div>
                     <CardsDesing />
+                </div>
+                <div>
+                    <AllPages/>
                 </div>
             </div>
         </div>
