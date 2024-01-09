@@ -21,14 +21,14 @@
         //    let arr=Object.keys(obj)
         //    let arr1=Object.values(obj)
         //    let arr2=Object.entries(obj)
-        //    console.log(arr)
-        //    console.log(arr1)
-        //    console.log(arr2)
+        //    console.log(arr,"arr")
+        //    console.log(arr1,"arr1")
+        //    console.log(arr2,"arr2")
 
-        //     for(let i in obj){
-        //         console.log(obj[i])
-        //         console.log(i)
-        //     }
+        //     // for(let i in obj){
+        //     //     console.log(obj[i])
+        //     //     console.log(i)
+        //     // }
 
         // }
         // Convertroarr()
@@ -52,11 +52,37 @@
         // AreaofTri(10, 10)
 
 
-        function HourtoSec() {
-            let a = 2
-            console.log("hello website")
-        }
+        // arr = [12, 34, 45, 56, 67, 87]
+        // function Objarr() {
+        //     rv = {}
+        //     for (let i = 0; i < arr.length; ++i) {
+        //         rv[i] = arr[i]
+        //         return console.log((rv))
+        //     }
+        // }
+        // Objarr()
         
+
+        arr = [1, 2, 3, 4, 5, 6, 7, 23, 45, 567, 23, 56, 789]
+        function Secound() {
+            let secmax = 0
+            let max = 0;
+            for (let i = 0; i <= arr.length; i++) {
+                if (arr[i] > max)
+                    max = arr[i]//789
+
+            }
+            for (let i = 0; i <= arr.length; i++) {
+                if (arr[i] > secmax && arr[i] != max)
+                    secmax = arr[i]
+
+            }
+            return secmax
+        }
+        console.log(arr)
+        console.log("second largest number is:", Secound())
+
+
 
     </script>
 </body>

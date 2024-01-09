@@ -33,7 +33,7 @@ const AllPages = () => {
 
             <header style={{ color: "#282828", fontSize: '25px', display: 'flex', justifyContent: 'space-evenly', margin: '20px', fontFamily: 'sans-serif', }}>
                 <div>
-                    <h2>Design Anything, Build Everything</h2>
+                    <h1>Design Anything, Build Everything</h1>
                     <p>Design and launch your website fast & no coding knowledge is required.</p>
                 </div>
             </header>
@@ -62,8 +62,6 @@ const AllPages = () => {
                         <Col xs={2}></Col>
                     </Row>
                 </Container>
-
-
             </div>
         </div >
     )
