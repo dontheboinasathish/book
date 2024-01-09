@@ -1,0 +1,12 @@
+
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 80px;
+    height: 40px;
+}
+.Onediv{
+    display: flex;
+    justify-content: center;
+    
+}
