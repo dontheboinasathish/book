@@ -8,6 +8,13 @@ import LayoutBuilder from "../Images/layout-builder-4.jpg";
 import HeaderBuilder from "../Images/header-builder-5.jpg";
 import MegaMenu from "../Images/mega-menu-feature.jpg";
 import FooterBuilder from "../Images/footer-builder-5.jpg";
+import FormBuilder from "../Images/form-builder.jpg";
+import Canvas from "../Images/off-canvas-feature.jpg";
+import setup from "../Images/setup-wizard-1.jpg";
+import performance from "../Images/performance-wizard.jpg";
+
+
+
 import { FaAdn } from "react-icons/fa";
 const AllPages = () => {
 
@@ -17,10 +24,12 @@ const AllPages = () => {
         { id: 3, url: HeaderBuilder, text: "Header Builder" },
         { id: 4, url: MegaMenu, text: "Mega Menu" },
         { id: 5, url: FooterBuilder, text: "Footer Builder", },
+        { id: 6, url: FormBuilder, text: "Form Builder", },
+        { id: 7, url: Canvas, text: "Canvas", },
+        { id: 7, url: setup, text: "setup-Wizrad", },
+        { id: 7, url: performance, text: "performance-Wizrad", },
     ])
     const [currentIndex, setCurrentIndex] = useState(0);
-
-
 
     const getImage = () => {
         return listOfImages.filter((e, i) => i == currentIndex && e)
@@ -47,7 +56,7 @@ const AllPages = () => {
                                     {
                                         listOfImages.map((e, i) => {
                                             return (
-                                                <li style={{ padding: "8px", fontSize: "20px", fontWeight: 500, display: "flex", alignItems: "center", backgroundColor: currentIndex == i && "#F6F6F6" }} onClick={() => setCurrentIndex(i)}>{e.Icon}{e.text}</li >
+                                                <li style={{ margin: '35px', padding: "8px", fontSize: "20px", fontWeight: 500, display: "flex", alignItems: "center", backgroundColor: currentIndex == i && "#F6F6F6" }} onClick={() => setCurrentIndex(i)}>{e.Icon}{e.text}</li >
                                             )
                                         })
                                     }

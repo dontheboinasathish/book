@@ -18,6 +18,7 @@ const AppRouting = () => {
                     <Route path="/card" element={<CardsDesing />} />
                     <Route path="/allpages" element={<AllPages />} />
                     <Route path="/game" element={<TicGame />} />
+                 
                 </Routes>
             </BrowserRouter>
 
