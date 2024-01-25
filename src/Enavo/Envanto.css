@@ -46,7 +46,6 @@
     justify-content: space-between;
     margin-right: auto;
 }
-
 .hovering:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -76,7 +75,7 @@
     border-radius: 50px;
 }
 
-/* .header-bar {
+.header-bar {
     position: sticky;
     top: 0px;
-} */
+}
