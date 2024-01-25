@@ -4,13 +4,11 @@ import Boxss from './Boxss';
 
 
 
-function TicGame({ onClick }) {
-
+function TicGame() {
     return (
         <div>
             <h1 className='Onediv'>TIC TOK GAME</h1>
             <Boxss onClick={null} />
-            
             <div>
                 <button>Change</button>
             </div>

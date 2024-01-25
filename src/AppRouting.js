@@ -5,8 +5,7 @@ import AboutPage from "./Enavo/AboutPage"
 import CardsDesing from "./Enavo/CardsDesing";
 import AllPages from "./Enavo/AllPages";
 import TicGame from "./Tic_Tok_Toe/TicGame";
-
-
+import Arrays from "./TypeScript/Arrays";
 
 const AppRouting = () => {
     return (
@@ -18,7 +17,7 @@ const AppRouting = () => {
                     <Route path="/card" element={<CardsDesing />} />
                     <Route path="/allpages" element={<AllPages />} />
                     <Route path="/game" element={<TicGame />} />
-                 
+                    <Route path="/tsfile" element={<Arrays/>} />
                 </Routes>
             </BrowserRouter>
 

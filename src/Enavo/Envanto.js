@@ -20,7 +20,7 @@ import '../Enavo/Envanto.css'
 const Envanto = () => {
     return (
         <div style={{ height: '100vh', margin: '0px', padding: '0px' }}>
-            <nav className="navbar">
+            <nav className="navbar header-bar">
                 <div className="navdiv">
                     <div className="logo">
                         <h3 style={{ color: 'white', fontSize: '20px' }}>enavanto<span className="spanword" style={{ color: " rgb(183, 232, 140)", fontFamily: '' }}>market</span></h3>
@@ -31,8 +31,8 @@ const Envanto = () => {
                 </div>
             </nav>
             <div>
-                <header>
-                    <Container>
+                <header >
+                    <Container className=" header-bar">
                         <Row style={{ fontWeight: 'inherit', fontFamily: 'sans-serif', display: 'flex', justifyContent: 'space-evenly', padding: '10px', margin: '20px', fontSize: '50px' }}>
                             <Col xs={2}>
                                 AVada<span style={{ color: 'green' }}>:</span>

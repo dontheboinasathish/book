@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-
-import Member from "../Images/live-visual.jpg"
 import LiveVisual from "../Images/live-visual.jpg";
 import LayoutBuilder from "../Images/layout-builder-4.jpg";
 import HeaderBuilder from "../Images/header-builder-5.jpg";
@@ -12,12 +10,9 @@ import FormBuilder from "../Images/form-builder.jpg";
 import Canvas from "../Images/off-canvas-feature.jpg";
 import setup from "../Images/setup-wizard-1.jpg";
 import performance from "../Images/performance-wizard.jpg";
-
-
-
 import { FaAdn } from "react-icons/fa";
-const AllPages = () => {
 
+const AllPages = () => {
     const [listOfImages, setListOfImages] = useState([
         { id: 1, url: LiveVisual, text: "Live Visual Builder", Icon: <FaAdn /> },
         { id: 2, url: LayoutBuilder, text: "Layout Builder" },
@@ -34,7 +29,6 @@ const AllPages = () => {
     const getImage = () => {
         return listOfImages.filter((e, i) => i == currentIndex && e)
     }
-
     console.log(getImage(), "uuuuu")
 
     return (
@@ -56,7 +50,7 @@ const AllPages = () => {
                                     {
                                         listOfImages.map((e, i) => {
                                             return (
-                                                <li style={{ margin: '35px', padding: "8px", fontSize: "20px", fontWeight: 500, display: "flex", alignItems: "center", backgroundColor: currentIndex == i && "#F6F6F6" }} onClick={() => setCurrentIndex(i)}>{e.Icon}{e.text}</li >
+                                                <li style={{ margin: '35px', padding: "8px", fontSize: "20px", fontWeight: 500, display: "flex", alignItems: "center", backgroundColor: currentIndex == i && "#F6F6F6", cursor: "pointer" }} onClick={() => setCurrentIndex(i)}>{e.Icon}{e.text}</li >
                                             )
                                         })
                                     }
