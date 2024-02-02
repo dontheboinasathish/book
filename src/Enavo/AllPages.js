@@ -30,7 +30,6 @@ const AllPages = () => {
         return listOfImages.filter((e, i) => i == currentIndex && e)
     }
     console.log(getImage(), "uuuuu")
-
     return (
         <div style={{ fontFamily: "Basier semi bold", height: '100vh', width: '100%', margin: '0' }}>
 
@@ -68,6 +67,5 @@ const AllPages = () => {
             </div>
         </div >
     )
-
 }
 export default AllPages;

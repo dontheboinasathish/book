@@ -7,7 +7,7 @@ const Boxss = ({ value, onClick }) => {
     const style = value === "X" ? "boxsize X" : "boxsize O"
 
     const Bords = ["W", "W", "W", "W", "W", "W", "W", "W", "W",]
-
+    
     const [xmark, setXmark] = useState(false)
 
     const handleClick = (idx) => {
