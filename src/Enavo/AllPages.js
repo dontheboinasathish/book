@@ -11,7 +11,6 @@ import Canvas from "../Images/off-canvas-feature.jpg";
 import setup from "../Images/setup-wizard-1.jpg";
 import performance from "../Images/performance-wizard.jpg";
 import { FaAdn } from "react-icons/fa";
-
 const AllPages = () => {
     const [listOfImages, setListOfImages] = useState([
         { id: 1, url: LiveVisual, text: "Live Visual Builder", Icon: <FaAdn /> },
